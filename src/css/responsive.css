@@ -1,0 +1,99 @@
+@media (max-width: 375px) {
+    body {
+        background: url(../images/bg-mobile.svg) no-repeat  hsl(257, 40%, 49%);
+        grid-template-areas: "header" 1fr
+                         "main" 1fr
+                         "footer" 1fr ;
+        height: 100%;
+    }
+    
+    .header-content img {
+        height: 30px;
+        margin: 0 0 10% 5%;
+    }
+
+    .main-content {
+        flex-direction: column;
+        padding: 0;
+    }
+    .main .main-content img {
+        height: 210px;
+    }
+    .main-content .info-main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10% 10%;
+    }
+    .main-content .info-main h1{
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    .main-content .info-main p {
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 1.5;
+        margin: 5% 0 10% 0;
+    }
+    .main-content .info-main a {
+        align-self: center;
+        padding: 3% 24%;
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        padding-left: 0;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-right: 0;
+    }
+    .footer-items {
+        font-size: 1.2rem;
+        display: flex;
+        padding-bottom: 4%;
+        justify-content: center;
+    }
+    .footer-items .face-item {
+        padding: 7px 12px;
+        margin: 0 5% 0 10%;
+        border-radius: 40px;
+        transition: 0.3s ease-in-out;
+    }
+    .footer-items .face-item:hover {
+        border: solid 2px hsl(300, 69%, 71%);
+        padding: 7px 12px;
+        border-radius: 40px;
+        color: hsl(300, 69%, 71%)
+    }
+    .footer-items .tt-item {
+        padding: 7px 10px;
+        margin: 0;
+        border-radius: 60px;
+        transition: 0.3s ease-in-out;
+    }
+    .footer-items .tt-item:hover {
+        border: solid 2px hsl(300, 69%, 71%);
+        padding: 7px 10px;
+        border-radius: 40px;
+        color: hsl(300, 69%, 71%)
+    }
+    .footer-items .insta-item {
+        padding: 7px 10px;
+        border-radius: 40px;
+        margin: 0 10% 0 5%;
+        transition: 0.3s ease-in-out;
+    }
+    .footer-items .insta-item:hover {
+        border: solid 2px hsl(300, 69%, 71%);
+        padding: 7px 10px;
+        border-radius: 40px;
+        color: hsl(300, 69%, 71%)
+    }
+    .attribution {
+        padding: 0 10% 0 10%;
+    }
+    .attribution p {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
