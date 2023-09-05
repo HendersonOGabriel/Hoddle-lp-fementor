@@ -5,13 +5,23 @@ html {
 
 body {
     display: grid;
-    grid-template-areas: "header"
+    grid-template-areas: "header" 
+                         "header"
+                         "header"
                          "main"
                          "main"
                          "main"
                          "main"
+                         "main"
+                         "main"
+                         "main"
+                         "main"
+                         "main"
+                         "main"
+                         "main"
+                         "footer"
                          "footer"  ;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(16, 6.25%);
     height: 100vh;
     background: url(../images/bg-desktop.png.svg) no-repeat center hsl(257, 40%, 49%);
     background-size: cover;
@@ -38,30 +48,25 @@ body {
 .main-content {
     display: flex;
     align-items: center;
-    padding-left: 5%;
-    padding-right: 15%;
+    height: 100%;
 }
 .main-content .info-main {
-    padding-left: 5%;
-    padding-bottom: 7%;
+    padding: 0 5% 0 3%;
 }
 .main-content .info-main h1 {
-    font-size: 4rem;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-size: 4.5rem;
 }
 .main-content .info-main p {
-    font-size: 1.6rem;
-    color: #fff;
-    margin: 5% 0;
+    font-size: 1.95rem;
+    margin: 5% 0 10% 0;
 }
 .main-content .info-main a {
-    padding: 2% 8%;
+    padding: 3% 15%;
     background-color: #fff;
-    border-radius: 40px;
-    font-size: 1.4rem;
+    border-radius: 30px;
+    font-size: 2rem;
     color: hsl(257, 40%, 49%);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in-out;
 }
 .main-content .info-main a:hover {
@@ -69,72 +74,64 @@ body {
     color: #fff;
 }
 .main .main-content img {
-    height: 400px;
+    height: 80%;
+    padding: 0 0 0 5%;
 }
 
 
 /* FOOTER */
 .footer {
     grid-area: footer;
-    padding-left: 5%;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    padding-right: 15%;
+    height: 100%;
 }
 .footer-items {
     font-size: 2.2rem;
     display: flex;
-    align-items: flex-end;
-    padding-bottom: 4%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 10%;
+    margin-right: 5%;
 }
-.footer-items .insta-item {
-    color: #fff;
-    border: solid 2px #fff;
-    padding: 6px 12px;
+.footer-items .insta-item, .tt-item, .face-item {
+    border: solid 1px #fff;
     border-radius: 40px;
-    margin-left: 20%;
     transition: 0.3s ease-in-out;
+}
+.footer-items li:last-child, li:nth-child(2) {
+    margin-left: 10%;
+}
+.footer-items .insta-item{
+    padding: 12px 12px 10px 12px;
 }
 .footer-items .insta-item:hover {
-    border: solid 2px hsl(300, 69%, 71%);
-    padding: 6px 12px;
-    border-radius: 40px;
-    color: hsl(300, 69%, 71%)
+    padding: 12px 12px 10px 12px;
 }
 .footer-items .tt-item {
-    color: #fff;
-    border: solid 2px #fff;
-    padding: 6px 10px;
-    border-radius: 60px;
-    margin-left: 20%;
-    transition: 0.3s ease-in-out;
+    padding: 12px 10px 10px 10px;
 }
 .footer-items .tt-item:hover {
-    border: solid 2px hsl(300, 69%, 71%);
-    padding: 6px 10px;
-    border-radius: 40px;
-    color: hsl(300, 69%, 71%)
+    padding: 12px 10px 10px 10px;
 }
 .footer-items .face-item {
-    color: #fff;
-    border: solid 2px #fff;
-    padding: 6px 14px;
-    border-radius: 40px;
-    transition: 0.3s ease-in-out;
+    padding: 12px 16px 11px 15px;
 }
 .footer-items .face-item:hover {
-    border: solid 2px hsl(300, 69%, 71%);
-    padding: 6px 14px;
+    padding: 12px 16px 11px 15px;
+}
+.footer-items .insta-item:hover, .tt-item:hover, .face-item:hover{
     border-radius: 40px;
-    color: hsl(300, 69%, 71%)
+    border: solid 1px hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
 }
 .footer .attribution {
     display: flex;
     align-items: flex-end;
     padding-bottom: 2%;
     font-size: 1.4rem;
-    color: #fff;
+    margin-left: 5%;
 }
 .attribution .fe-mentor, .promotion {
     color: #e6d4e588;
